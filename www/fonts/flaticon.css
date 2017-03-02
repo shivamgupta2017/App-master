@@ -27,8 +27,13 @@
         font-size: 20px;
 font-style: normal;
 }
+<<<<<<< HEAD
 .flaticon-padlock:before { content: "\f100"; }
 .flaticon-terms:before { content: "\f102"; }
+=======
+.flaticon-003-padlock:before { content: "\f102"; }
+
+>>>>>>> f72fc5cac182b72657f4b8342c798a7d5c99dfbe
 .flaticon-about-us:before { content: "\f100"; }
 .flaticon-add-friend:before { content: "\f101"; }
 .flaticon-edit:before { content: "\f102"; }

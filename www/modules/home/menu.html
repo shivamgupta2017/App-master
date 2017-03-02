@@ -32,7 +32,10 @@
         <ion-item href="" ng-click="openPlaystore()" class="item-icon-left"><i class="icon flaticon-star"></i> {{'rateUsOnThePlaystore' | translate}} </ion-item>
         <ion-item menu-close href="#/app/changePassword"  ng-click="changePasswordPage()" ng-if="checkUserLogin()" class="item-icon-left"><i class="icon flaticon-padlock"></i> {{'changePassword' | translate}} </ion-item>
         <ion-item menu-close href=""  ng-click="settings()" class="item-icon-left"><i class="icon flaticon-language"></i>{{'changeLanguage' | translate}}</ion-item>
+<<<<<<< HEAD
          <ion-item menu-close href="" ng-click="openTermsConditions()" class="item-icon-left"><i class="icon flaticon-terms"></i> {{'Terms and Conditions' | translate}} </ion-item>
+=======
+>>>>>>> f72fc5cac182b72657f4b8342c798a7d5c99dfbe
         <ion-item menu-close href="#/app/login" ng-click="logout()" ng-show="checkUserLogin()" class="item-icon-left"><i class="icon flaticon-login"></i> {{'signOut' | translate}} </ion-item>
         <ion-item menu-close href="#/app/login" ng-click="setLogin()" ng-if="!checkUserLogin()" class="item-icon-left"><i class="icon flaticon-login"></i> {{'login' | translate}} </ion-item>
       </ion-list>

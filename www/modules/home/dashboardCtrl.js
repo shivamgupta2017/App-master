@@ -1,5 +1,6 @@
 "use strict";
 app.controller('dashboardCtrl', function($scope, $location, $ionicSlideBoxDelegate, $cordovaPush, appConst, $ionicPopup, globalMethods, $translate, $ionicLoading, Services, $localStorage, $rootScope, $ionicHistory) {
+<<<<<<< HEAD
     
     
     
@@ -54,6 +55,8 @@ app.controller('dashboardCtrl', function($scope, $location, $ionicSlideBoxDelega
     
     
     
+=======
+>>>>>>> f72fc5cac182b72657f4b8342c798a7d5c99dfbe
     $scope.getCategories = function() {
         angular.element(document).ready(function() {
             $rootScope.cartCount = $localStorage.cart_list.length;
@@ -1270,7 +1273,11 @@ app.controller('selectedItemCtrl', function($scope, $location, appConst, $localS
     }
 });
 
+<<<<<<< HEAD
 app.controller('menuCtrl', function($scope, $ionicModal,$location, appConst, globalMethods, $localStorage, $rootScope, $translate,$ionicHistory,$ionicLoading,Services) {
+=======
+app.controller('menuCtrl', function($scope, $location, appConst, globalMethods, $localStorage, $rootScope, $translate) {
+>>>>>>> f72fc5cac182b72657f4b8342c798a7d5c99dfbe
     $scope.editProfile = {
         first_name: '',
         last_name: '',
@@ -1282,6 +1289,7 @@ app.controller('menuCtrl', function($scope, $ionicModal,$location, appConst, glo
         pincode: '',
         landmark: ''
     };
+<<<<<<< HEAD
     
     
     $ionicModal.fromTemplateUrl('modules/home/terms_conditions_modal.html', {
@@ -1324,6 +1332,8 @@ app.controller('menuCtrl', function($scope, $ionicModal,$location, appConst, glo
     };
     
     
+=======
+>>>>>>> f72fc5cac182b72657f4b8342c798a7d5c99dfbe
     $scope.openEditProfile = function() {
         if (globalMethods.checkUserLogin()) {
             $location.path(appConst.path.editProfile);
@@ -1610,31 +1620,46 @@ app.controller('profileCtrl', function($scope, $location, appConst, globalMethod
         });
     }
 });
+<<<<<<< HEAD
 
 
 
 
 app.controller('aboutUsCtrl', function($scope, $location, appConst, uiGmapGoogleMapApi, $ionicLoading, Services, $rootScope) {
    
+=======
+app.controller('aboutUsCtrl', function($scope, $location, appConst, uiGmapGoogleMapApi, $ionicLoading, Services, $rootScope) {
+>>>>>>> f72fc5cac182b72657f4b8342c798a7d5c99dfbe
     $scope.home = function() {
         $location.path(appConst.path.dashboard);
     };
     $scope.aboutUs = function() {
+<<<<<<< HEAD
        
         if ($rootScope.appVersion == '') {
        // alert('about us function callign');
+=======
+        if ($rootScope.appVersion == '') {
+>>>>>>> f72fc5cac182b72657f4b8342c798a7d5c99dfbe
             cordova.getAppVersion.getVersionNumber().then(function(version) {
                 $rootScope.appVersion = version;
             });
         }
         uiGmapGoogleMapApi.then(function(maps) {
+<<<<<<< HEAD
         alert('hello');
+=======
+>>>>>>> f72fc5cac182b72657f4b8342c798a7d5c99dfbe
             $scope.map = {
                 zoom: 18,
                 bounds: {},
                 center: {
                     latitude: $rootScope.siteSettings.latitude,
+<<<<<<< HEAD
                     longitude:$rootScope.siteSettings.longitude
+=======
+                    longitude: $rootScope.siteSettings.longitude
+>>>>>>> f72fc5cac182b72657f4b8342c798a7d5c99dfbe
                 }
             };
             $scope.markers = [{
@@ -1676,9 +1701,12 @@ app.controller('aboutUsCtrl', function($scope, $location, appConst, uiGmapGoogle
     }
     
 });
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> f72fc5cac182b72657f4b8342c798a7d5c99dfbe
 app.controller('ratings', function($scope){
         $scope.rating = {};
         $scope.rating.max = 5;
@@ -1816,4 +1844,8 @@ app.controller('ratings', function($scope){
            $scope.file_name = file_name.split('.');
           //  alert(JSON.stringify($scope.result));
         });
+<<<<<<< HEAD
     }); 
+=======
+    }); 
+>>>>>>> f72fc5cac182b72657f4b8342c798a7d5c99dfbe
